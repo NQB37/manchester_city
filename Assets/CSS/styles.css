@@ -1,0 +1,374 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.title{
+    text-decoration: 3px underline #FFC659;
+    text-transform: uppercase;
+    display: block;
+    padding: 60px 200px;
+}
+
+html{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    background-color: #6CABDD;
+    /* #6CABDD */
+    z-index: 1;
+}
+
+img.logo_icon{
+    float: left;
+    width: 50px;
+    padding: 10px;
+    overflow: auto;;
+}
+
+#navbar ul{
+    list-style-type: none;
+}
+
+#navbar li{
+    float: left;
+}
+
+#navbar li a{
+    display: block;
+
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    text-align: center;
+    text-decoration: none;
+    padding: 26px 20px;
+}
+
+#home{
+    padding-top: 70px;
+}
+
+#home .slider img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.player-position{
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+#team h3{
+    border-bottom: 1px solid #dbd5d5ce;
+    margin-left: 350px;
+    margin-right: 350px;
+    text-transform: uppercase;
+}
+
+.subposition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_info{
+    display: inline-block;
+    position: relative;
+
+    margin: 20px 20px; 
+    padding: 0px;
+
+    box-shadow: 0px 7px 20px rgba(0, 24, 56, 0.8);
+}
+
+.player__header{
+    position: relative;
+
+    background-image: url(https://web-assets.mancity.com/dist/images/brand/blueship.png);
+    background-size: cover;
+    background-position: 10% 30%;
+
+    overflow: hidden;
+}
+
+.player__number{
+    position: absolute;
+    left: 5%;
+    
+    color: transparent;
+    font-weight: 700;
+    font-size: 60px;
+
+    -webkit-text-stroke: 2px #000;
+}
+
+.country-flag{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.player_image_wrapper{
+    position:relative;
+}
+
+.player_image{
+    display: block;
+    width: 200px;
+    height: 180px;
+
+    object-fit: cover;
+    object-position: top right;
+
+    padding: 0;
+}
+
+.player_content{
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.player_fullname{
+    display: block;
+    height: 40px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+}
+
+.player_name{
+    display: block;
+}
+
+#manager{
+    width: 100%;
+    margin: 0;
+    color: white;
+    
+    background-color: grey;
+    overflow: hidden;
+}
+
+.manager_visual{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manager_visual .manager_text{
+    display: block;
+    width: 15%;
+}
+
+.manager_text .manager_name p{
+    display: block;
+    font-size: 1.5em;
+    padding: 30px 0;
+}
+
+.manager_text .manager_name blockquote{
+    margin-top: 100px;
+    font-size: 1.5em
+}
+
+.manager_visual .manager_image{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.manager_image img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+.manager_visual .manager_static{
+    width: 15%;
+    font-size: 1.3em;
+    padding: 30px 0;
+}
+
+.manager_static .static{
+    margin-bottom: 50px;
+    display: block
+}
+
+.legend_player{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.legend_info{
+    display: inline-block;
+    position: relative;
+
+    margin: 20px 20px; 
+    padding: 10px;
+
+    background-image: linear-gradient(to top,black,grey);
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.legend_img{
+    width: 200px;
+    height: 180px;
+
+    object-fit: cover;
+    object-position: top left;
+
+    overflow: hidden;
+}
+
+.legend_name{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left:0;
+
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: grey;
+    height: 10vh;
+}
+
+.social_logo{
+    display: flex;
+    gap: 15px;
+}
+.social_logo_item{
+    display: block;
+    list-style-type: none;
+    background-color: #083456;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    position: relative;;
+}
+
+.player__number::before{
+    content:"";
+    position: absolute;
+    width: 200px;
+    height: 244px;
+    transform: translate(-5%,-0%);
+    z-index: 2;
+}
+
+.logo__link::before{
+    content:"";
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.player_content::before{
+    content:"";
+    position: absolute;
+    transform: translate(-6%,-37%);
+    width: 200px;
+    height: 244px;
+    z-index: 2;
+}
+
+.player_fullname::before{
+    content:"";
+    position: absolute;
+    transform: translate(-6%,-79%);
+    width: 200px;
+    height: 244px;
+    z-index: 2;
+
+}
+
+.logo__link{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3bd6ff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.player__number:hover{
+    color: #083456;
+    -webkit-text-stroke: 2px #083456;
+}
+
+.player_fullname:hover{
+    color: #fff;
+}
+
+.player_content:hover{
+    background-color: #083456;
+}
+
+.image_zoom:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.image_zoom:not(:hover){
+    transition: 1s;
+}
+
+.social_logo_item:hover,
+.logo__link:hover{
+    background-color: #3bd6ff;
+    color: #083456;
+}
+
+#navbar li a:hover{
+    background-color: rgba(255,255,255,0.5);
+}
